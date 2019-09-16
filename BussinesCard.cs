@@ -20,14 +20,24 @@ namespace UHP_Business_Card_App
             this.baseColor = baseColor;
             this.picturePath = picturePath;
         }
-        public string FirstName { get; }
-        public string LastName { get; }
+        public string GetFirstName() {
+            return this.firstName;
+        }
+        /*public string LastName { get; }  podsjetnik sebi: nikad više propertije nemoj koristiti jer potrošiš dva sata da skuzis sto nevalja
         public string Company { get; }
         public string Position { get; }
         public string Phone { get; }
         public string Mail { get; }
         public string BaseColor { get; }
         public string PicturePath { get; }
+        */
+        public string GetLastName() { return this.lastName; }
+        public string GetCompany() { return this.company; }
+        public string GetPosition() { return this.position; }
+        public string GetPhone() { return this.phone; }
+        public string GetMail() { return this.mail; }
+        public string GetBaseColor() { return this.baseColor; }
+        public string GetPicturePath() { return this.picturePath; }
 
 
 

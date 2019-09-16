@@ -14,10 +14,7 @@ namespace UHP_Business_Card_App
     {
         public View()
         {
-            InitializeComponent();
-            //private List<string> FirstLastNameCreatedList;
-            createdCardsComboBox.Items.Add("ehehlfjwha");
-            createdCardsComboBox.Items.Add("ehehlfsdfsdfsdfdsfdswha");
+            InitializeComponent();            
         }
 
         private void BackToForm1Button_Click(object sender, EventArgs e)
@@ -30,8 +27,43 @@ namespace UHP_Business_Card_App
         }
 
         private void CreatedCardsComboBox_SelectedIndexChanged(object sender, EventArgs e) {
+            int number = createdCardsComboBox.SelectedIndex;
+
+            List<BussinesCard> createdCardObjectList;
             
+                createdCardObjectList = Cards.GetBussinesCardsObjectList();
+            BussinesCard card = createdCardObjectList[number];
+            label7.Text = card.GetFirstName();
+            label8.Text = card.GetLastName();
+            label9.Text = card.GetCompany();
+            label10.Text = card.GetPosition();
+            label11.Text = card.GetPhone();
+            label12.Text = card.GetMail();
+            label13.Text = card.GetBaseColor();
+            //label8.Text = card.GetPicturePath();
+            string imageLocation = card.GetPicturePath();
+
+            pictureBox.ImageLocation = imageLocation;
+            
+
+
+        }
+
+        private void GenerateButton_Click(object sender, EventArgs e) {
+            List<string> createdCards = Cards.GetListOfCreated();
+            foreach (string firstLastName in createdCards) {                
+                createdCardsComboBox.Items.Add(firstLastName);
+            }
+            generateButton.Hide();
+        }
+
+        private void View_Load(object sender, EventArgs e) {
+
+        }
+
+        private void Label7_Click(object sender, EventArgs e) {
 
         }
     }
 }
+

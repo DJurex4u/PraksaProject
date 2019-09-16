@@ -12,8 +12,9 @@ namespace UHP_Business_Card_App
         public static void AddNewCard(BussinesCard newCard) {
             if (bussinesCardList == null) {
                 bussinesCardList = new List<BussinesCard>();
-            }
-            bussinesCardList.Add(newCard);
+            }            
+                bussinesCardList.Add(newCard);           
+
         }
         public static BussinesCard GetCard(int cardNumber) {
             if (bussinesCardList != null)
@@ -23,7 +24,11 @@ namespace UHP_Business_Card_App
             return null;
         }
         public static int NumOfCards(){
-            return (bussinesCardList.Count()) ;
+            if (bussinesCardList != null) {
+                return (bussinesCardList.Count());
+            }
+            return -1;
+            
             }
         public static bool IsEmpty(){
             return (!bussinesCardList.Any());
@@ -34,12 +39,15 @@ namespace UHP_Business_Card_App
         }
         public static List<string> GetListOfCreated() {
             List<string> createdCards = new List<string>();
-            foreach (BussinesCard card in bussinesCardList) {
-                string FirstLastName = card.FirstName + " " + card.LastName;
-                createdCards.Add(FirstLastName);
-            }      
-
-            return createdCards;
+            if (bussinesCardList != null) {
+                foreach (BussinesCard card in bussinesCardList) {
+                    string FirstLastName = card.GetFirstName() + " " + card.GetLastName();
+                    createdCards.Add(FirstLastName);
                 }
+            }
+
+                return createdCards;
+            }
+        
     }
 }
