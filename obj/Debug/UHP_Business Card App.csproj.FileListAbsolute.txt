@@ -1,0 +1,11 @@
+C:\Users\Djuro\source\repos\UHP_Business Card App\UHP_Business Card App\bin\Debug\UHP_Business Card App.exe.config
+C:\Users\Djuro\source\repos\UHP_Business Card App\UHP_Business Card App\bin\Debug\UHP_Business Card App.exe
+C:\Users\Djuro\source\repos\UHP_Business Card App\UHP_Business Card App\bin\Debug\UHP_Business Card App.pdb
+C:\Users\Djuro\source\repos\UHP_Business Card App\UHP_Business Card App\obj\Debug\UHP_Business Card App.csprojAssemblyReference.cache
+C:\Users\Djuro\source\repos\UHP_Business Card App\UHP_Business Card App\obj\Debug\UHP_Business_Card_App.Form1.resources
+C:\Users\Djuro\source\repos\UHP_Business Card App\UHP_Business Card App\obj\Debug\UHP_Business_Card_App.Properties.Resources.resources
+C:\Users\Djuro\source\repos\UHP_Business Card App\UHP_Business Card App\obj\Debug\UHP_Business Card App.csproj.GenerateResource.cache
+C:\Users\Djuro\source\repos\UHP_Business Card App\UHP_Business Card App\obj\Debug\UHP_Business Card App.csproj.CoreCompileInputs.cache
+C:\Users\Djuro\source\repos\UHP_Business Card App\UHP_Business Card App\obj\Debug\UHP_Business Card App.exe
+C:\Users\Djuro\source\repos\UHP_Business Card App\UHP_Business Card App\obj\Debug\UHP_Business Card App.pdb
+C:\Users\Djuro\source\repos\UHP_Business Card App\UHP_Business Card App\obj\Debug\UHP_Business_Card_App.View.resources
